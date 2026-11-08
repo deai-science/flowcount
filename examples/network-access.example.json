@@ -1,0 +1,7 @@
+{
+  "ap_ssid": "FlowCount-XXXXXX",
+  "ap_password": "REPLACE_WITH_PRIVATE_DEVICE_KEY",
+  "ap_ip": "192.168.4.1",
+  "user": "admin",
+  "hostname": "flowcount.local"
+}
