@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">FlowCount by DeAI Labs</title><desc id="desc">On-device people counting. ESP32-P4, IMX219 and a local web interface. Prototype 1.0.</desc>
+<defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#b6cbbb" stroke-width=".5"/></pattern></defs>
+<rect width="1280" height="420" rx="28" fill="#eff4ed"/><rect x="780" width="500" height="420" fill="url(#grid)"/>
+<g fill="none" stroke="#175c45" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><rect x="55" y="56" width="68" height="68" rx="20" fill="#175c45"/><path d="M71 79h32l-8-8m8 8-8 8M107 102H75l8-8m-8 8 8 8" stroke="#fff" stroke-width="3"/></g>
+<text x="143" y="85" fill="#175c45" font-family="Arial, sans-serif" font-size="17" font-weight="700" letter-spacing="3">DEAI LABS / SOURCE AVAILABLE</text>
+<text x="143" y="113" fill="#68796c" font-family="Arial, sans-serif" font-size="16">Local intelligence. Shared knowledge.</text>
+<text x="55" y="229" fill="#173d30" font-family="Arial, sans-serif" font-size="84" font-weight="700" letter-spacing="-4">FlowCount</text>
+<text x="59" y="274" fill="#425d4c" font-family="Arial, sans-serif" font-size="25">People in. People out. On device.</text>
+<g font-family="Arial, sans-serif" font-size="15" fill="#175c45"><rect x="58" y="321" width="145" height="39" rx="19" fill="#dbe9d8"/><text x="78" y="347">ESP32-P4 + C6</text><rect x="215" y="321" width="103" height="39" rx="19" fill="#dbe9d8"/><text x="235" y="347">IMX219</text><rect x="330" y="321" width="163" height="39" rx="19" fill="#e8dfce"/><text x="351" y="347" fill="#825031">PROTOTYPE 1.0</text></g>
+<rect x="923" y="44" width="116" height="331" rx="15" fill="#bfd9bd" opacity=".6"/><path d="M923 44v331m116-331v331" stroke="#4d916a" stroke-width="2" stroke-dasharray="8 7"/>
+<path d="M830 196h278l-18-18m18 18-18 18" stroke="#175c45" stroke-width="4" fill="none"/>
+<g transform="translate(838 100)" fill="#175c45"><circle cx="0" cy="0" r="14"/><path d="M-13 24Q0 13 13 24l12 46-12 4-9-29v51H-6V45l-9 29-12-4z"/></g>
+<g transform="translate(1115 234)" fill="#af6841"><circle cx="0" cy="0" r="14"/><path d="M-13 24Q0 13 13 24l12 46-12 4-9-29v51H-6V45l-9 29-12-4z"/></g>
+<path d="M1154 250H852l18-18m-18 18 18 18" stroke="#af6841" stroke-width="4" fill="none"/>
+<text x="799" y="393" font-family="Arial, sans-serif" font-size="13" fill="#68796c">CAMERA → DETECTION → TRACKING → CROSSING</text>
+</svg>

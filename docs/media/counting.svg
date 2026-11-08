@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="470" viewBox="0 0 1280 470" role="img" aria-labelledby="title desc">
+<title id="title">What counts as a crossing?</title><desc id="desc">Two observations confirm the origin. Moving inside the band does not count. Two observations on the opposite side complete a crossing and increment one entry. Turning back can later create an exit.</desc>
+<defs><g id="person"><circle cx="0" cy="0" r="12"/><path d="M-12 21Q0 12 12 21l10 36-10 4-7-22v53H-6V39l-7 22-10-4z"/></g></defs>
+<rect width="1280" height="470" rx="24" fill="#f2f5ef"/>
+<g font-family="Arial, sans-serif"><text x="35" y="52" fill="#627667" font-size="14" font-weight="700" letter-spacing="2">FLOWCOUNT / CROSSING RULE</text><text x="35" y="98" fill="#173d30" font-size="30" font-weight="700">A complete crossing, confirmed on both sides.</text>
+<g fill="#fff" stroke="#d0dece"><rect x="35" y="135" width="280" height="235" rx="17"/><rect x="345" y="135" width="280" height="235" rx="17"/><rect x="655" y="135" width="280" height="235" rx="17"/><rect x="965" y="135" width="280" height="235" rx="17"/></g>
+<g fill="#d8ead8"><rect x="164" y="153" width="50" height="144"/><rect x="474" y="153" width="50" height="144"/><rect x="784" y="153" width="50" height="144"/><rect x="1094" y="153" width="50" height="144"/></g>
+<g stroke="#78a785" stroke-width="2" stroke-dasharray="5 5"><path d="M164 153v144m50-144v144M474 153v144m50-144v144M784 153v144m50-144v144M1094 153v144m50-144v144"/></g>
+<use href="#person" x="102" y="176" fill="#175c45"/><use href="#person" x="497" y="176" fill="#175c45"/><use href="#person" x="872" y="176" fill="#175c45"/><use href="#person" x="1038" y="176" fill="#ae6841"/>
+<g font-size="18" fill="#173d30" font-weight="700"><text x="54" y="323">1. Confirm origin</text><text x="364" y="323">2. Cross the band</text><text x="674" y="323">3. Confirm destination</text><text x="984" y="323">4. Return can count</text></g>
+<g font-size="14" fill="#627667"><text x="54" y="350">2 observations · count unchanged</text><text x="364" y="350">Inside alone does not count</text><text x="674" y="350">2 observations → +1 entry</text><text x="984" y="350">Opposite complete crossing → exit</text></g>
+<path d="M125 221h25l-6-6m6 6-6 6M537 221h30l-6-6m6 6-6 6M1068 221h-20l6-6m-6 6 6 6" stroke="#507864" stroke-width="2" fill="none"/>
+<text x="35" y="413" fill="#627667" font-size="16">Uses tracked box centers. Both sides must lie inside the gate endpoints. A prediction alone never adds a person.</text><text x="35" y="443" fill="#627667" font-size="14">Illustrative states. Actual association and short-occlusion recovery also enforce time, motion and geometry limits.</text>
+</g></svg>
