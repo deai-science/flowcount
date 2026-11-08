@@ -1,0 +1,33 @@
+name: Bug or counting problem
+description: Report reproducible firmware, UI, network or counting behavior.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Do not attach passwords, @NETWORK output, flash dumps or identifiable footage without consent."
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware and versions
+      description: Board, P4 revision, camera, firmware commit and ESP-IDF version.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected behavior
+      description: Include placement, lighting, gate, confidence, body filter and exact steps.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior and evidence
+      description: For counting, give manual versus observed entries/exits separately. Was each person detected in a separate box? Include sanitized logs or synthetic box sequences.
+    validations:
+      required: true
+  - type: textarea
+    id: performance
+    attributes:
+      label: Performance and connection
+      description: Processing, generated JPEG and browser-received fps; AP or venue Wi-Fi; browser/device. No credentials.

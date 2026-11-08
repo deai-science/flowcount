@@ -1,0 +1,17 @@
+name: Feature or learning improvement
+description: Suggest a focused improvement to FlowCount.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Who needs this, under what conditions, and what happens today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and validation
+      description: Explain the change, hardware/resource implications and how to check it.
+    validations:
+      required: true
