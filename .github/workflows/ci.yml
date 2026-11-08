@@ -1,0 +1,43 @@
+name: Tests and firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  host:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Python bridge and publication checks
+        run: |
+          python3 -m pip install -r requirements-dev.txt
+          python3 -m unittest discover -s tests -p 'test_*.py' -v
+          python3 tools/check_publication.py
+      - name: JavaScript UI tests
+        run: node tests/test_ui.js
+      - name: Portable C++ tests
+        run: |
+          cmake -S tests -B tools/host-build -DCMAKE_BUILD_TYPE=Debug
+          cmake --build tools/host-build --parallel 2
+          ctest --test-dir tools/host-build --output-on-failure
+  firmware:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Build ESP32-P4 with ESP-IDF 5.5.5
+        run: >-
+          docker run --rm -v "$PWD:/project" -w /project
+          -e HOME=/tmp -e IDF_TARGET=esp32p4
+          espressif/idf:v5.5.5@sha256:a9231d0697ab8f7517cc072e93b7c83e04907bfbfba80b6440d7dbbf90665cf2
+          idf.py build
