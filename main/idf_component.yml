@@ -1,0 +1,8 @@
+dependencies:
+  idf: ">=5.5.0,<5.6.0"
+  espressif/esp_video: "2.4.0"
+  mushbraindave/esp_cam_sensor_imx: "0.4.0"
+  espressif/pedestrian_detect: "0.3.2"
+  espressif/esp_hosted: "3.0.10"
+  espressif/esp_wifi_remote: "1.6.5"
+  espressif/mdns: "1.8.2"

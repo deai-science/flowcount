@@ -1,0 +1,24 @@
+menu "FlowCount people counter"
+config PC_BOARD_PINS_CONFIRMED
+    bool "Board pinout verified"
+    default n
+    help
+        Enable only after verifying camera SDA/SCL and power against
+        your board schematic. Without this option the firmware will not access the camera.
+config PC_CAMERA_SDA
+    int "Camera SDA GPIO"
+    range 0 54
+    default 7
+config PC_CAMERA_SCL
+    int "Camera SCL GPIO"
+    range 0 54
+    default 8
+config PC_CAMERA_RESET
+    int "RESET GPIO (-1 if unconnected)"
+    range -1 54
+    default -1
+config PC_CAMERA_PWDN
+    int "PWDN GPIO (-1 if unconnected)"
+    range -1 54
+    default -1
+endmenu
