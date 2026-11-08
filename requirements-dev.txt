@@ -1,0 +1,2 @@
+# USB monitor and console. Flashing tools are provided by the ESP-IDF environment.
+pyserial==3.5

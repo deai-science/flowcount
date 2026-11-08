@@ -1,0 +1,32 @@
+# Generated ESP-IDF and host-test files
+/build/
+/build-*/
+/managed_components/
+/sdkconfig
+/sdkconfig.old
+/.build-dir
+/tools/host-build/
+
+# Local device data, credentials, dumps and captures
+/.private/
+/backups/
+/captures/
+*.bin
+*.elf
+*.map
+*.partial
+*.log
+.env
+.env.*
+!.env.example
+
+# Environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.playwright-mcp/
+.DS_Store
+Thumbs.db
